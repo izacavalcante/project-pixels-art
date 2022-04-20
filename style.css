@@ -1,6 +1,13 @@
+h1 {
+    font-size: 40px;
+}
+
 .color {
     display: inline-block;
     border: 1px solid rgb(0, 0, 0);
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
 }
 
 #color1 {
@@ -17,4 +24,13 @@
 
 #color4 {
     background-color: yellow;
+}
+
+.pixel {
+    background-color: white;
+    display: inline-flex;
+    border: 1px solid rgb(0, 0, 0);
+    width: 80px;
+    height: 80px;
+    border-width: 5px;
 }
