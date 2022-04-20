@@ -26,11 +26,14 @@ h1 {
     background-color: yellow;
 }
 
+#pixel-board {
+}
+
 .pixel {
     background-color: white;
     display: inline-flex;
     border: 1px solid rgb(0, 0, 0);
-    width: 80px;
-    height: 80px;
-    border-width: 5px;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
 }
