@@ -1,21 +1,6 @@
 let colorBlack = document.querySelector('#color1');
 colorBlack.classList.add('selected');
 
-// let colores = document.querySelector('.color');
-// colores.addEventListener('click', function (){
-//     const selected = document.querySelector('.selected');
-//     selected.classList.remove('selected');
-//     // selected.classList.add('selected');
-// });
-// function colorPaletteClicked(event) {
-//     for (let color of colorPalette) {
-//         if (color.className === 'color selected') {
-//             color.className = 'color';
-//         }
-//     }
-//     event.target.className = 'color selected';
-// }
-
 const color1 = document.querySelector('#color1');
 const color2 = document.querySelector('#color2');
 const color3 = document.querySelector('#color3');
@@ -31,3 +16,11 @@ function selectSelected(event) {
     selected.classList.remove('selected');
     event.target.classList.add('selected'); // O .target retorna o elemento que acionou o evento.
 }
+
+// const selected = document.querySelector('.selected');
+// let pixels = document.querySelector('#pixel-board');
+// for (let i = 0; i < pixels.length; i += 1) {
+//     pixels[i].addEventListener('click', function(){
+//         pixels[i].style.backgroundColor = rgb(0, 0, 0);
+//     })
+// }
