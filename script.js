@@ -1,6 +1,7 @@
 let colorBlack = document.querySelector('#color1');
 colorBlack.classList.add('selected');
 
+
 const color1 = document.querySelector('#color1');
 const color2 = document.querySelector('#color2');
 const color3 = document.querySelector('#color3');
@@ -17,10 +18,15 @@ function selectSelected(event) {
     event.target.classList.add('selected'); // O .target retorna o elemento que acionou o evento.
 }
 
-// const selected = document.querySelector('.selected');
-// let pixels = document.querySelector('#pixel-board');
-// for (let i = 0; i < pixels.length; i += 1) {
-//     pixels[i].addEventListener('click', function(){
-//         pixels[i].style.backgroundColor = rgb(0, 0, 0);
-//     })
-// }
+
+let selected = document.querySelector('.selected');
+let pixels = document.querySelectorAll('.pixel');
+const cssSelected = window.getComputedStyle(selected, null);
+let bgColor = cssSelected.getPropertyValue("background-color");
+
+pixels.addEventListener('click', function(){
+    for (let i = 0; i < cssSelected.length; i += 1) {
+        cssSelected.style = cssSelected.item[i];
+    }
+})
+console.log(cssSelected)
