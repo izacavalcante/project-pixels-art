@@ -27,7 +27,7 @@ function colorirPixels() {
        /* https:www.w3schools.com/jsref/jsref_getcomputedstyle.asp */
       i.style.backgroundColor = bgColor;
       console.log(event.target);
-    } );
+    });
   }
 }
 colorirPixels();
@@ -38,3 +38,22 @@ const textButton = 'Limpar';
 button.innerText = textButton;
 body.appendChild(button);
 button.setAttribute('id', 'clear-board');
+
+function clearPixels() {
+  const clearButton = document.getElementById('clear-board');
+  const pixels = document.getElementsByClassName('pixel');
+  clearButton.addEventListener('click', function(event) {
+    for (let i of pixels) {
+      i.style.backgroundColor = 'white';
+      console.log(event.target);
+    }
+  });
+}
+clearPixels();
+
+window.onload = (null);
+
+function pagCarregada () {
+    alert('Pagína carregada, divirta-se :)');
+}
+pagCarregada();
