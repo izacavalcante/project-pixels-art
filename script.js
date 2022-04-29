@@ -1,3 +1,5 @@
+window.onload = (null);
+
 const colorBlack = document.querySelector('#color1');
 colorBlack.classList.add('selected');
 
@@ -51,9 +53,7 @@ function clearPixels() {
 }
 clearPixels();
 
-window.onload = (null);
-
 function pagCarregada () {
-    alert('Pagína carregada, divirta-se :)');
+    alert('Página carregada, divirta-se :)');
 }
 pagCarregada();
