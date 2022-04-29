@@ -22,11 +22,11 @@ color4.addEventListener('click', selectSelected);
 function colorirPixels() {
   const pixels = document.querySelectorAll('.pixel');
   for (let i of pixels) {
-    i.addEventListener('click', function(event) {
+    i.addEventListener('click', function (event) {
       const selected = document.querySelector('.selected');
       const cssSelected = window.getComputedStyle(selected, null);
       const bgColor = cssSelected.getPropertyValue('background-color');
-       /* https:www.w3schools.com/jsref/jsref_getcomputedstyle.asp */
+     /* https:www.w3schools.com/jsref/jsref_getcomputedstyle.asp */
       i.style.backgroundColor = bgColor;
       console.log(event.target);
     });
@@ -44,9 +44,9 @@ button.setAttribute('id', 'clear-board');
 function clearPixels() {
   const clearButton = document.getElementById('clear-board');
   const pixels = document.getElementsByClassName('pixel');
-  clearButton.addEventListener('click', function(event) {
+  clearButton.addEventListener('click', function (event) {
     for (let i of pixels) {
-      i.style.backgroundColor = 'white';
+      i.style.backgroundColor = "rgb(255,255,255)";
       console.log(event.target);
     }
   });
@@ -54,6 +54,6 @@ function clearPixels() {
 clearPixels();
 
 function pagCarregada () {
-    alert('Página carregada, divirta-se :)');
+  alert('Página carregada, divirta-se :)');
 }
 pagCarregada();
